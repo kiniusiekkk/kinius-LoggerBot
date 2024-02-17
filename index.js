@@ -23,7 +23,7 @@ const kanalLOGI = '1179772981518540820';
 client.on('messageDelete', (wiadomosc) => {
 
     if(wiadomosc.author.id === client.user.id) return;
-    const embed = new discord.MessageEmbed()
+    const embed = new Discord.MessageEmbed()
     .setColor(kolorembed)
     .setTimestamp()
     .setFooter(footer)
@@ -33,7 +33,7 @@ client.on('messageDelete', (wiadomosc) => {
 });
 client.on('messageUpdate', async(starawiadomosc, nowawiadomosc) => {
     if(starawiadomosc.author.id === client.user.id) return;
-    const embed = new discord.MessageEmbed()
+    const embed = new Discord.MessageEmbed()
     .setColor(kolorembed)
     .setTimestamp()
     .setFooter(footer)
